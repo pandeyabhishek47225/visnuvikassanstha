@@ -5,6 +5,15 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+div{
+    height: 20px;
+    width: 40px;
+    background-color: #0082e6;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 .navbar{
     position: fixed;
     top: 0;

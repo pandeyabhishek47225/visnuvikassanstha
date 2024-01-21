@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Feedbacksinput{
+    height: 200px;
+    width: 200px;
+}
+input,textarea{
+    width: 40%;
+    height: 150px;
+}
+button{
+    background-color: red;
+    height: 20px;
+    width: fit-content;
+    display: flex;
+}

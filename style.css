@@ -7,20 +7,24 @@
 body{
     font-size: 23px;
 }
+.fixed{
+    display:inline;
+    white-space: nowrap;
+}
 .social{
    margin-top: 0;
    padding: 5px;
    top: 0;
    width: 100%;
    transition: top 0.3s ;
-   background-color: black;
-   overflow: hidden;
+   background-color: #333;
+   color: whitesmoke;
 }
 .social a{
     color: blue;
     display: inline-flex;
     margin: 0 10px;
-    float: right;
+    align-items: end;
     text-decoration: none;
 }
 .social ul li {
@@ -34,6 +38,10 @@ body{
 .helpline{
     padding: 14px 16px;
     color: #fff;
+    text-align: center;
+}
+.address{
+    display: inline;
 }
 .middle{
     margin: 10px;
@@ -63,7 +71,8 @@ body{
 .active,.menu-bar ul li:hover{
     background: yellowgreen;
     border-radius: 3px;
-    transform: scale(1.4);
+    transform: scale(1.1);
+    white-space: nowrap;
 }
 .menu-bar .fa{
     margin-right: 8px;
@@ -100,13 +109,26 @@ body{
     margin: 50px;
     padding: 50px;
     width: 100%;
-    height: 100%;
     justify-content: center;
     align-items: center;
 }
 .work{
-    width: 500px;
+    width: 100%;
     position: relative;
+    background: linear-gradient(to right,white,#666);
+    display: flex;
+   
+}
+.message{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+.message message1 {
+    padding: 10px;
+    margin: 10px;
 }
 img{
     width: 100%;
@@ -149,8 +171,8 @@ img{
 .contact{
     width: 100%;
     margin: 16px;
-    background: linear-gradient(to right,black,green);
-    color: white;
+    background: linear-gradient(to right,white,grey);
+    color: black;
     padding: 16px;
 }
 
@@ -232,3 +254,4 @@ img{
     border-radius: 50%;
     color: #fff;
 }
+

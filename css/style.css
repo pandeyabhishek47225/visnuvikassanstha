@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  font-size:30px;
+}
+marquee {
+  background-color: rgb(71, 71, 107);
+  color: #ffffff;
+  margin-bottom: -7px ;
+}
+.border {
+  background-color: rgb(16, 16, 70);
+  color: whitesmoke;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15%;
+  /* position: relative; */
+}
+.helpline {
+  padding: 1%;
+  color: #fff;
+  text-align: left;
+  width: 70%;
+  text-transform: uppercase;
+}
+.social {
+  display: flex;
+  width: auto;
+}
+.social-link {
+  margin-right: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+#facebook {
+  color: #3b55d9;
+  align-items: center;
+}
+#twitter {
+  color: black;
+  align-items: center;
+}
+#linkedin {
+  color: #0077b5;
+  align-items: center;
+}
+#instagram {
+  color: red;
+  align-items: center;
+}
+#instagram:hover {
+  transform: rotate(360deg) scale(1.7);
+  color: #fff;
+}
+#linkedin:hover {
+  transform: rotate(360deg) scale(1.7);
+  color: #fff;
+}
+#twitter:hover {
+  transform: rotate(360deg) scale(1.7);
+  color: #fff;
+}
+#facebook:hover {
+  transform: rotate(360deg) scale(1.7);
+  color: #fff;
+}
+.ngo-name {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 1rem;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.enngo {
+  color: blue;
+  text-transform: uppercase;
+}
+.hingo {
+  color: red;
+}
+.ngo-name .level {
+  animation: twinkling 1s infinite;
+}
+
+@keyframes twinkling {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: rgb(19, 1, 46);
+  }
+  100% {
+    color: rgb(86, 3, 3);
+  }
+}
+nav {
+  background-color: rgb(16, 16, 70);
+  border: 2px solid rgb(16, 16, 70);
+  display: flex;
+  color: white;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5%;
+  white-space: nowrap;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(244, 234, 234);
+}
+.navbar a:hover {
+  background-color: white;
+  color: #070404;
+  transition: all 0.2s ease-in-out;
+}
+.navbar:hover {
+  background-color: white;
+}
+.about {
+  display: flex;
+  padding: 5%;
+  width: 100%;
+  justify-content: center;
+}
+.about-us img {
+  width: 100%;
+  height: 410px;
+  bottom: 0rem;
+}
+.mission img {
+  width: 100%;
+  height: 460px;
+  bottom: 0rem;
+}
+.about-us,
+.mission {
+  margin: 1%;
+  position: relative;
+  width: 48%;
+  background: linear-gradient(to right, white, #666);
+}
+.what-we-do,
+.impact,
+.involved {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  padding: 2%;
+  text-align: justify;
+}
+.what-we-do ul li span {
+  /* font-size: 26px; */
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.middle {
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.work {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to right, white, #666);
+  display: flex;
+}
+.message {
+  align-items: center;
+  justify-content: center;
+  display: block;
+  text-align: justify;
+  margin: 2%;
+  padding: 2%;
+}
+.work-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.work-text:hover {
+  opacity: 1;
+}
+.work-text h3 {
+  font-size: 2.9rem;
+  color: rgb(98, 11, 11);
+  margin-bottom: 5%;
+}
+.work-text p {
+  /* font-size: 1rem; */
+  color: #bbb;
+}
+.work-text > * {
+  transform: translateY(50px);
+  transition: transform 0.6s;
+}
+.work-text:hover > * {
+  transform: translateY(0);
+}
+.involved ul li a{
+  text-decoration: none;
+}
+.involved ul li{
+  list-style-type: none;
+}
+.footer {
+  width: 100%;
+  /* height: auto; */
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, rgb(16, 16, 70), gray);
+  color: #fff;
+  /* padding: 5%; */
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  white-space: nowrap;
+}
+
+.footer-col h4 {
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: -27%;
+  /* position: relative; */
+  float: left;
+}
+.footer-col ul li a {
+  text-transform: capitalize;
+  color: #bbb;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li a:hover {
+  color: #b2ff00;
+  padding-left: 10%;
+}
+/* for tablet media screen */
+@media screen and(min-width:501px) and (max-width: 600px) {
+  body {
+    font-size: 21px;
+  }
+  .helpline {
+    font-size: 17px;
+  }
+  .ngo-name {
+    font-size: 20px;
+  }
+  .navbar {
+    font-size: 1px;
+  }
+}
+/* for mobile media screen */
+@media only screen and (min-width: 270px) and (max-width: 500px) {
+  body {
+    font-size: 18px;
+  }
+  .helpline {
+    font-size: 10px;
+  }
+  .about {
+    display: grid;
+  }
+  .about-us {
+    width: 100%;
+  }
+  .mission {
+    width: 100%;
+  }
+  .ngo-name {
+    font-size: 18px;
+  }
+  .navbar {
+    font-size: 13px;
+  }
+  .footer .col3 {
+    display: none;
+  }
+}

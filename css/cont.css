@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    /* background: radial-gradient( circle,red,green) no-repeat; */
+    /* background-size: cover; */
+    background: radial-gradient(circle, rgb(250, 200, 200), rgb(16, 16, 70)) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.contact{
+    /* width: 100%;
+    height: 100vh; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.content {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.content h2{
+    color: rgb(16,16,70);
+}
+.container {
+    display:flex;
+    margin: 50px;
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    color: #ffffff;
+}
+.box .icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    color:  rgb(16, 16, 70);
+    margin: 14px 293px;
+}
+.text h3{
+    color: rgb(16, 16, 70);
+}
+.contact-form{
+    width: 400px;
+    height: 500px;
+    background: white;
+}
+.contact-form h2{
+    color: rgb(16,16,70);
+    margin: 30px;
+}
+
+.contact-form .inputbox textarea{
+    width: 50%;
+    height: 60px;
+    margin: 27px auto;
+    border-radius: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form .inputbox input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 50%;
+    height: 30px;
+    margin: 27px auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="" href="/visnuvikassanstha/javascript/main.js">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            border: 2px solid #030303;
+            margin: 30px;
+        }
+
+        .form {
+            padding: 20px;
+            width: 500px;
+        }
+
+        .inpu {
+            width: 500px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+
+        .inpu:hover {
+            background-color: rgb(186, 185, 185);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="form">
+        <h1>Form</h1>
+        <form action="index.html" method="GET">
+            <div class="inpu">Name:<input type="text" name="text" placeholder="enter your full name" /></div>
+            <div class="inpu">Password:<input type="password" name="password" placeholder="password" /></div>
+            <div class="inpu">Mobile-no:<input type="number" maxlength="10" name="mobile-no"
+                    placeholder="00-0000-0000" /></div>
+            <div class="inpu">File:<input type="file" name="file" placeholder="upload your resume" /></div>
+            <div class="inpu">DOB:<input type="date" name="date" placeholder="dd/mm/yyyy" /></div>
+            <div class="inpu">Radio:<input type="radio" name="radio" placeholder="" /></div>
+            <div class="inpu">Checkbox:<input type="checkbox" name="checkbox" placeholder="checkbox" /></div>
+            <div class="inpu">Range:<input type="range" name="range" min="12" max="20" placeholder="range" /></div>
+            <div class="inpu">Submit:<input type="submit" name="submit" placeholder="send" value="send" /></div>
+        </form>
+    </section>
+    <script>
+        navigator.geolocation.getCurrentPosition(showPosition);
+        function showPosition(position) {
+            console.log(position);
+        }
+    </script>
+</body>
+
+</html>
